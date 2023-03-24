@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Anime Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">
+        Test Your
+        <span class="bold">Anime</span> Knowledge
+      </h1>
+    </div>
+    <section id="main">
+      <h3>Let's see how much you know about <span class="bold">Anime</span></h3>
+      <button class="forward-btn" id="next">
+        Take the
+        <span class="span-quiz"
+          >Quiz
+          <svg
+            class="arrow"
+            width="23"
+            height="20"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.5996 13.0607C24.1854 12.4749 24.1854 11.5251 23.5996 10.9393L14.0537 1.3934C13.4679 0.807611 12.5182 0.807611 11.9324 1.3934C11.3466 1.97919 11.3466 2.92893 11.9324 3.51472L20.4177 12L11.9324 20.4853C11.3466 21.0711 11.3466 22.0208 11.9324 22.6066C12.5182 23.1924 13.4679 23.1924 14.0537 22.6066L23.5996 13.0607ZM0 13.5L22.539 13.5V10.5L0 10.5L0 13.5Z"
+              fill="#37306B"
+            />
+          </svg>
+        </span>
+      </button>
+    </section>
+
+    <!-- Quiz Component -->
+    <div class="quiz" id="quiz">
+      <div class="quiz-container">
+        <div class="quiz-header">
+          <h4 id="question-number">
+            Questions
+            <svg
+              width="60"
+              height="6"
+              viewBox="0 0 50 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="61.9733" height="5.20343" fill="#37306B" />
+            </svg>
+          </h4>
+
+          <h2 class="question" id="question">Question Comes Here</h2>
+
+          <ul class="option">
+            <li>
+              <input type="radio" name="answer" id="a" class="answer" />
+              <label
+                for="a
+              "
+                id="Option1"
+              >
+                Option 1
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label
+                for="b
+              "
+                id="Option2"
+              >
+                Option 1
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" />
+              <label
+                for="c
+              "
+                id="Option3"
+              >
+                Option 1
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer" />
+              <label
+                for="d
+              "
+                id="Option4"
+              >
+                Option 1
+              </label>
+            </li>
+          </ul>
+          <button class="next" id="submit">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
